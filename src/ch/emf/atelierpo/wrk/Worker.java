@@ -9,7 +9,11 @@ public class Worker {
 
 
     public boolean controleNumeroTelMobile(String prefix, String numero) {
-        return false;
+        boolean isCorrect = false;
+        if (prefix != null && numero != null) {
+            isCorrect = true;
+        }
+        return isCorrect;
     }
 
 }
