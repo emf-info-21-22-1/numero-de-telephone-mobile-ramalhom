@@ -1,0 +1,14 @@
+{
+  "tests": [
+    {
+      "name": "Worker Test",
+      "setup": "",
+      "run": "ant -noinput -buildfile build.xml",
+      "input": "",
+      "output": "",
+      "comparison": "included",
+      "timeout": 10,
+      "points": 10
+    }
+  ]
+}
