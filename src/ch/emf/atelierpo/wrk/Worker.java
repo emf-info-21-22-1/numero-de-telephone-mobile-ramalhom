@@ -9,11 +9,13 @@ public class Worker {
 
 
     public boolean controleNumeroTelMobile(String prefix, String numero) {
-        boolean isCorrect = false;
+        boolean isNumeroValide = false;
         if (prefix != null && numero != null) {
-            isCorrect = true;
+            if (numero.matches("[0-9]{3} [0-9]{2} [0-9]{2}") && prefix.matches("[+]417[6789]")) {
+                isNumeroValide = true;
+            }
         }
-        return isCorrect;
+        return isNumeroValide;
     }
 
 }
